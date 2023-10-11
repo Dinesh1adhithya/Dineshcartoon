@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+    </head>
+    <style>
+        body{
+            background-image: url("image4/cartoonbig.img");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        p{
+          width:350px;
+          height:400px;
+          border-style: groove;
+          border-radius:20px;
+          background-image: url("image5/border-design-with-wild-animals_1308-29913.avif");
+       background-repeat: no-repeat;
+        }
+        .AB{
+            height:30px;
+        }
+
+        #butto{
+            height:30px;
+            width:150px;
+            background-color: cornflowerblue;
+        }
+        #button{
+            height:30px;
+            width:70px;
+            background-color: crimson;
+        }
+        
+        #butt{
+            height:30px;
+            width:140px;
+            background-color: aqua                                                                                           ;
+        }
+        A{
+            color: darkmagenta;
+        }
+        #but{
+            height:30px;
+            width:140px;
+            background-color: magenta;
+        }
+        #bu{
+            height:30px;
+            width:140px;
+            background-color:lightgoldenrodyellow;
+        }
+
+        #B{
+            color:darkred;
+        }
+
+        #C{
+            color:darkred;
+        }
+
+        #A{
+            padding-top:130px;
+        }
+    </style>
+
+<body>
+
+    <center>
+        <P id="A" > WORLD CARTOON LOGIN <br><br>
+            <i id="B" > <label for ="m"><strong>email:</strong></label>
+            <input class="AB" type="email" id="email" placeholder="enter your email" ></i> <br><br><br>
+            <i id="C" > <label for ="pass"><strong>Password:</strong></label>
+            <input class="AB" type="password" id="password" placeholder="enter your Password" ></i> <br><br>
+            
+            <input id="button" type="button" value="Sign in" onclick="checkLogin()"><br><br>
+ 
+            <a href="index4.html" target="blank" >
+            <input id="butto" type="button" value="Sign in with Twitter"></a><br><br>
+            <a href="index2.html" target="blank" >
+            <input id="butt" type="button" value="Sign in with facebook"></a><br><br>
+            
+            <a href="index3.html" target="blank" >           
+            <input id="but" type="button" value="Sign in with instagram">
+            </a><br><br>
+
+            <a href="index1.html" target="blank" >
+            <input id="bu" type="button" value="Free Trial $">
+            </a>
+        </P>
+    </center>
+ 
+<script>
+
+function checkLogin() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  
+  // Replace the following condition with your own validation logic
+  if (email === "aditi374848@gmail.com" && password === "123") {
+    window.location.href = "index1.html";
+    // You can add code here to redirect to another page or perform other actions
+  }
+   else {
+    alert("Login failed. Please check your email and password.");
+  }
+}
+</script>
+
+</body>
+</html>
